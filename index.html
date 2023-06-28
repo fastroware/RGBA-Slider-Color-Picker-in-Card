@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mycss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="card">
+            <div id="color-box">
+                <button id="copy-color">Copy</button>
+                <input id="form-color">
+            </div>
+            <div class="selector">
+                <div class="slide-container" title="Red color">
+                    <div class="code">R</div>
+                    <input type="range" min="0" max="255" value="155" class="slider rgb-r">
+                    <div class="number"></div>
+                </div>
+                <div class="slide-container" title="Green color">
+                    <div class="code">G</div>
+                    <input type="range" min="0" max="255" value="255" class="slider rgb-g">
+                    <div class="number"></div>
+                </div>
+                <div class="slide-container" title="Blue color">
+                    <div class="code">B</div>
+                    <input type="range" min="0" max="255" value="55" class="slider rgb-b">
+                    <div class="number"></div>
+                </div>
+                <div class="slide-container" title="Alpa color">
+                    <div class="code alpa">A</div>
+                    <input type="range" min="0" max="100" value="100" class="slider rgb-a">
+                    <div class="number"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="myjs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: floralwhite;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px #dedede;
+}
+
+#color-box {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border-bottom: 1px solid #dedede;
+}
+
+#copy-color {
+    cursor: pointer;
+    float: right;
+    margin-top: 255px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px dashed #202020;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 10%);
+    transition: background-color 0.3s;
+}
+
+#copy-color:hover {
+    background-color: rgba(0, 0, 0, 30%);
+}
+
+#copy-color:focus {
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+#form-color {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 10%);
+    border: 1px dashed #202020;
+    color: #fff;
+    text-align: center;
+    width: 110px;
+    padding: 0;
+    font-size: 0.5em;
+}
+
+.selector {
+    margin-top: 10px;
+    padding: 15px 25px;
+}
+
+.slide-container {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    margin-bottom: 15px;
+}
+
+.slide-container .code {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.slide-container .code.alpa {
+    background-color: rgb(202, 202, 202);
+    color: #5c5c5c;
+    border: 1px dashed #a1a1a1;
+}
+
+.slide-container .range {
+    cursor: pointer;
+}
+
+.slide-container .number {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
